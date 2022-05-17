@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.orawshi {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media screen and (max-width:767px) {
+
+    .orawshi {
+        flex-direction: column;
+    }
+
+}
+.sabaq {
+    text-decoration: none;
+    border: 1px solid lightblue;
+    padding: 7px;
+    border-radius: 17px;
+    transform: scale(2);
+    color: lightcoral;    
+}
+
+.sabaq:hover {
+    background-color: #dddbdb;
+}
+
+.sabaq:active {
+    background-color: gray;
+    color: white;
+}

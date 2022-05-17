@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            user-select: none;
+        }
+
+        .web,
+        .python {
+            width: 200px;
+            height: 240px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 17px;
+            padding: 10px;
+            border: 1px solid lightblue;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 767px) {
+            body {
+                flex-direction: column;
+            }
+        }
+
+        @font-face {
+            font-family: Luam;
+            src: url(web/fontlar/Luam.ttf);
+        }
+
+        a {
+            text-align: center;
+            text-decoration: none;
+            border: 3px solid violet;
+            font-family: Luam;
+            font-size: 2em;
+            border-radius: 10px;
+            background-color: #ccc;
+            color: gray;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="web">
+        <img src="web.png" alt="web">
+        <a href="web/web.html">Web</a>
+    </div>
+    <div class="python">
+        <img src="python.png" alt="python">
+        <a href="python/python.html">Python</a>
+    </div>
+</body>
+
+</html>
